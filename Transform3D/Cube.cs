@@ -16,7 +16,6 @@ namespace Transform3D
             {
                 this.points = points;
             }
-            Console.WriteLine("Hi!");
         }
 
         public void translate(int x, int y, int z) 
