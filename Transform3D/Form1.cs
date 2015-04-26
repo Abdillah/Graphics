@@ -94,8 +94,27 @@ namespace Transform3D
             drawAxis(e);
 
             Point3D p3d0 = new Point3D(0, 0, 0);
-            Point3D p3d1 = new Point3D(0, 0, 20);
+            Point3D p3d1 = new Point3D(0, 0, 30);
+			Point3D p3d2 = new Point3D(30, 0, 30);
+			Point3D p3d3 = new Point3D(30, 0, 0);
+			Point3D p3d4 = new Point3D(0, 30, 0);
+			Point3D p3d5 = new Point3D(0, 30, 30);
+			Point3D p3d6 = new Point3D(30, 30, 30);
+			Point3D p3d7 = new Point3D(30, 30, 0);
+			
             e.Graphics.DrawLine(pen, project(p3d0), project(p3d1));
+			e.Graphics.DrawLine(pen, project(p3d1), project(p3d2));
+			e.Graphics.DrawLine(pen, project(p3d2), project(p3d3));
+			e.Graphics.DrawLine(pen, project(p3d3), project(p3d0));
+			e.Graphics.DrawLine(pen, project(p3d4), project(p3d5));
+			e.Graphics.DrawLine(pen, project(p3d5), project(p3d6));
+			e.Graphics.DrawLine(pen, project(p3d6), project(p3d7));
+			e.Graphics.DrawLine(pen, project(p3d7), project(p3d4));
+			
+			e.Graphics.DrawLine(pen, project(p3d0), project(p3d4));
+			e.Graphics.DrawLine(pen, project(p3d1), project(p3d5));
+			e.Graphics.DrawLine(pen, project(p3d2), project(p3d6));
+			e.Graphics.DrawLine(pen, project(p3d3), project(p3d7));
         }
     }
 }

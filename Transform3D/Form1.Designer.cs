@@ -40,8 +40,18 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.rotate_x = new System.Windows.Forms.TextBox();
+			this.rotate_y = new System.Windows.Forms.TextBox();
+			this.rotate_z = new System.Windows.Forms.TextBox();
+			this.button2 = new System.Windows.Forms.Button();
+			
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+			this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // canvas
@@ -158,21 +168,89 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Rectangle";
             this.radioButton2.UseVisualStyleBackColor = true;
+			//
+			// groupBox3
+			//
+			this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.rotate_z);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.rotate_y);
+            this.groupBox3.Controls.Add(this.rotate_x);
+            this.groupBox3.Location = new System.Drawing.Point(330, 499);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(171, 132);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Rotation";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(336, 77);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.Text = "Degree of Z";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(387, 103);
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Text = "Rotate";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(336, 46);
+            this.label5.Name = "label2";
+            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.Text = "Degree of Y";
+            // 
+            // rotate_z
+            // 
+            this.rotate_z.Location = new System.Drawing.Point(388, 74);
+            this.rotate_z.Name = "rotate_z";
+            this.rotate_z.Size = new System.Drawing.Size(100, 20);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(336, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Text = "Degree of X";
+            // 
+            // rotate_y
+            // 
+            this.rotate_y.Location = new System.Drawing.Point(387, 46);
+            this.rotate_y.Name = "rotate_y";
+            this.rotate_y.Size = new System.Drawing.Size(100, 20);
+            // 
+            // rotate_x
+            // 
+            this.rotate_x.Location = new System.Drawing.Point(387, 17);
+            this.rotate_x.Name = "rotate_x";
+            this.rotate_x.Size = new System.Drawing.Size(100, 20);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 643);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox3);
+			this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.canvas);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Transformasi 3D";
+            this.Text = "Transformasi 3D";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+			this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -191,6 +269,14 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton radioButton2;
+		private System.Windows.Forms.GroupBox groupBox3;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.TextBox rotate_x;
+		private System.Windows.Forms.TextBox rotate_y;
+		private System.Windows.Forms.TextBox rotate_z;
+		private System.Windows.Forms.Button button2;
     }
 }
 

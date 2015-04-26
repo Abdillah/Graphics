@@ -24,6 +24,7 @@ namespace Transform3D
                 point.X += x;
                 point.Y += y;
                 point.Z += z;
+				// hi
             }
         }
 
