@@ -25,7 +25,7 @@ namespace Transform3D
             }
         }
 
-        public void translate(int x, int y, int z) 
+        public void Translate(int x, int y, int z)
         {
             foreach (Point3D point in points) {
                 point.X += x;

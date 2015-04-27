@@ -68,7 +68,11 @@ namespace Transform3D
             return new Point(x, y);
         }
 
-        private void drawAxis(PaintEventArgs e)
+		/**
+		 * @brief Draw axis to suggest a 3D model to human brain.
+		 * @param e Windows paint event information.
+		 */
+        private void DrawAxis(PaintEventArgs e)
         {
             Point p0;
             Point p1;
