@@ -9,7 +9,14 @@ namespace Transform3D
 {
     class Cube
     {
-        Point3D[] points;
+		protected const int[,] POINTS_IN_FACE = {{1, 2, 3, 4},
+												 {1, 2, 6, 5},
+												 {2, 3, 7, 6},
+												 {3, 4, 8, 7},
+												 {4, 1, 5, 8},
+												 {5, 6, 7, 8}};
+		Point3D[] points;
+
         public Cube(Point3D[] points)
         {
             if (points.GetLength(0) >= 8)
@@ -28,14 +35,23 @@ namespace Transform3D
             }
         }
 
-        private void constructEdge(PaintEventArgs e)
-        {
-            // e.Graphics.DrawLine();
-        }
+		/**
+		 * @brief Get points occured in nth face.
+		 *        See the constant @code{POINTS_IN_FACE} above.
+		 */
+		protected Point3D[] GetFace(int nth)
+		{
+			nth -= 1;
 
-        public void draw(PaintEventArgs e)
-        {
-            
-        }
+			Point3D[] face;
+			for (int i = 0; i < 4; i++)
+			{
+				int idx = POINTS_IN_FACE[nth, i];
+				face[i] = points[idx];
+			}
+
+			return face;
+		}
+
     }
 }
