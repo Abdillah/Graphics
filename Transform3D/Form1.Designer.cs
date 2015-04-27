@@ -191,12 +191,15 @@
             this.label6.Location = new System.Drawing.Point(336, 77);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 5;
             this.label6.Text = "Degree of Z";
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(387, 103);
+            this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
             this.button2.Text = "Rotate";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -206,6 +209,7 @@
             this.label5.Location = new System.Drawing.Point(336, 46);
             this.label5.Name = "label2";
             this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.TabIndex = 5;
             this.label5.Text = "Degree of Y";
             // 
             // rotate_z
@@ -213,6 +217,7 @@
             this.rotate_z.Location = new System.Drawing.Point(388, 74);
             this.rotate_z.Name = "rotate_z";
             this.rotate_z.Size = new System.Drawing.Size(100, 20);
+            this.rotate_z.TabIndex = 5;
             // 
             // label4
             // 
@@ -220,6 +225,7 @@
             this.label4.Location = new System.Drawing.Point(336, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 5;
             this.label4.Text = "Degree of X";
             // 
             // rotate_y
@@ -227,12 +233,14 @@
             this.rotate_y.Location = new System.Drawing.Point(387, 46);
             this.rotate_y.Name = "rotate_y";
             this.rotate_y.Size = new System.Drawing.Size(100, 20);
+            this.rotate_y.TabIndex = 5;
             // 
             // rotate_x
             // 
             this.rotate_x.Location = new System.Drawing.Point(387, 17);
             this.rotate_x.Name = "rotate_x";
             this.rotate_x.Size = new System.Drawing.Size(100, 20);
+            this.rotate_x.TabIndex = 5;
             // 
             // Form1
             // 
